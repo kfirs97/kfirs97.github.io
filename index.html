@@ -7,36 +7,49 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f77ea9; /* Changed to pink */
             margin: 0;
             padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh; /* Adjusted for better mobile viewing */
             flex-direction: column;
         }
         .container {
-            background-color: #ffffff;
+            background-color: #f77ea9;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             padding: 20px;
             max-width: 800px;
             width: 100%;
-            margin: 20px;
+            margin: 20px auto; /* Center container on all screen sizes */
         }
         h1 {
-            color: #333;
+            color: white; /* Changed to white */
             text-align: center;
             margin-bottom: 20px;
-            font-size: 28px; /* Increased font size */
-            font-weight: bold; /* Make the font bold */
+            font-size: 28px; /* Adjusted font size */
+            font-weight: bold;
         }
         video {
             width: 100%;
             height: auto;
             border-radius: 8px;
             outline: none;
+        }
+        /* Media query for devices with width less than or equal to 600px */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; /* Reduced padding */
+            }
+            .container {
+                padding: 10px; /* Reduced padding inside the container */
+                margin: 10px; /* Reduced margin for the container */
+            }
+            h1 {
+                font-size: 20px; /* Smaller font size for smaller screens */
+            }
         }
     </style>
 </head>
